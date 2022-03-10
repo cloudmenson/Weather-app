@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="img/sunny_weather_icon_150663.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">            
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather App</h1>
+      <div class="widget">
+        <div class="widget__search-elements">
+          <div class="widget__search-elements-wrapper">
+            <form class="widget__search-elements-form">
+              <div class="row">
+                <div class="col l4 m12 s12">
+                  <div class="row">
+                    <div class="input-field col m12 s12">
+                      <i class="material-icons prefix">border_color</i>
+                      <input type="text" id="autocomplete-input" required>
+                      <label for="autocomplete-input">City name</label>               
+                    </div>
+                  </div>
+                </div>
+                <div class="widget__search-elements-btn">
+                  <button class="btn waves-effect waves-light btn-search" type="submit" name="action">Search
+                    <i class="material-icons right">send</i>
+                  </button>   
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row widget__markup">
+          
+        </div>
+      </div>
+      <div class="widget__modal">
+        <a class="pulse btn-floating waves-effect waves-light btn modal-trigger grey" href="#modal1">
+          <i class="material-icons">info_outline</i>
+        </a>
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4 class="modal-title">Assistant</h4>
+            <p class="modal-info">The search supports all cities in the world.
+              To get started, enter the city name.
+              </br>Good luck!</p>
+            <p class="modal-info">Поиск поддерживает все города мира.
+              Для того, чтобы начать, получить название города.
+              </br>Удачи!</p>
+            <p class="modal-info">Пошук підтримує усі міста світу.
+              Щоб почати, введіть назву міста.
+              </br>Успіхів!</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+          </div>
+        </div>
+        <div class="preloader-wrapper small">
+          <div class="spinner-layer spinner-green-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
